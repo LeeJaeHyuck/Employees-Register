@@ -23,7 +23,8 @@ public class ActionFactory {
 	public Action getAction(String command) {
 		Action action = null;
 		System.out.println("ActionFactory: " + command);
-		
+		System.out.println("매냥이가 수정함: " + command);
+
 		if(command.equals("login_form")) {
 			action = new LoginFormAction();
 		}else if(command.equals("login")) {
